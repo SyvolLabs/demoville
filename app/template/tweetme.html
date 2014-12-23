@@ -1,0 +1,17 @@
+      <div class="jumbotron" ng-controller="tweetCtrl">
+		<div>
+	        <h3>Tweet Yourself!</h3>
+			<input type="text" class="form-control" placeholder="Enter a 140 char max tweet" ng-model="user_input"/>
+			<br>
+		</div>
+		<div>
+			<button type="button" class="btn btn-primary btn-success" tweet-me>Tweet Me!</button>
+			<button type="button" class="btn btn-primary"  ng-click="cancel()">Cancel</button>
+			<p ng-repeat="tweet in tweets track by $index" class="tweet">{{tweet}}</p>
+			<br><br>
+		</div>
+
+		<div>
+			<a href="">See the code on GitHub</a>
+		</div>
+      </div>
